@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media/ITZHAKicon.png">
+    <title>ITZHAK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/flickity.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/flickity.js"></script>
+    <script src="assets/js/SAT.js"></script>
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+    <div class="main-carousel" id="myCar" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell" id="shotSpeedUp"><img src="media/shotSpeedUp.svg"></div>
+        <div class="carousel-cell" id="firerateUp"><img src="media/firerateUp.svg"></div>
+        <div class="carousel-cell" id="damageUp"><img src="media/damageUp.svg"></div>
+        <div class="carousel-cell" id="sizeDown"><img src="media/sizeDown.svg"></div>
+        <div class="carousel-cell" id="shotSizeUp"><img src="media/shotSizeUp.svg"></div>
+        <div class="carousel-cell" id="speedUp"><img src="media/speedUp.svg"></div>
+        <div class="carousel-cell" id="hpUp"><img src="media/hpUp.svg"></div>
+    </div>
+    <div id="startScreen">
+        <div class="binds">
+            <img src="media/wasd.svg" alt="">
+            MOVE
+        </div>
+        <div id="playButton">START</div>
+        <div class="binds">
+            <img src="media/arrows.svg" alt="">
+            SHOOT
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <progress id="hp" value="100" max="100"></progress>
+    <div id="endScreen">
+        <p>Game Over!</p>
+        <div>Score: <div id="scorePrint" style="display: inline;">2</div></div>
+        <div id="restart">Play Again</div>
+    </div>
+    <div id="message"></div>
+    <div id="stats">
+        <div id="shotSpeed" class="stat">
+            <img src="media/shotSpeed.svg" alt="">
+            <div class="count shotSpeedUp">
+                <img src="media/line.svg" alt="">
+            </div>
+        </div>
+        <div id="firerate" class="stat">
+            <img src="media/firerate.svg" alt="">
+            <div class="count firerateUp">
+                <img src="media/line.svg" alt="">
+            </div>
+        </div>
+        <div id="score">0</div>
+        <div id="damage" class="stat">
+            <img src="media/damage.svg" alt="">
+            <div class="count damageUp">
+                <img src="media/line.svg" alt="">
+            </div>
+        </div>
+        <div id="speed" class="stat">
+            <img src="media/speed.svg" alt="">
+            <div class="count speedUp">
+                <img src="media/line.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
